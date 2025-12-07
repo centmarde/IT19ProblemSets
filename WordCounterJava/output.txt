@@ -1,0 +1,7 @@
+dog: 2
+amused: 1
+brown: 1
+fox: 1
+jumps: 1
+lazy: 1
+quick: 1
