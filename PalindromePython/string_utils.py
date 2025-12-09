@@ -5,9 +5,19 @@ def clean_string(text):
 
 def is_palindrome(text):
     cleaned = clean_string(text)
-    return cleaned == cleaned[::-1]
+   
+    char_array = list(cleaned)
+   
+    reversed_array = char_array[::-1]
+    return char_array == reversed_array
 
 def are_anagrams(text1, text2):
     cleaned1 = clean_string(text1)
     cleaned2 = clean_string(text2)
-    return sorted(cleaned1) == sorted(cleaned2)
+   
+    array1 = list(cleaned1)
+    array2 = list(cleaned2)
+   
+    sorted_array1 = sorted(array1)
+    sorted_array2 = sorted(array2)
+    return sorted_array1 == sorted_array2
